@@ -1,0 +1,13 @@
+{
+    "name": "hexlet/code",
+    "bin": ["bin/brain-game"],
+    "authors": [
+        {
+            "name": "sergiodrovski",
+            "email": "sergiodrovski@gmail.com"
+        }
+    ],
+    "description": "hexlet php-package",
+    "license": "MIT",
+    "require": {}
+}
