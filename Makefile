@@ -9,5 +9,8 @@ bgames: brain-games
 validate:
 	composer validate
 
+linter:
+	composer phpcs -- --standard=PSR12 bin
+
 
 	
