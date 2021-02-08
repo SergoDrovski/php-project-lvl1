@@ -12,5 +12,7 @@ validate:
 linter:
 	composer phpcs -- --standard=PSR12 bin
 
+brain-even:
+	@./bin/brain-even
 
 	

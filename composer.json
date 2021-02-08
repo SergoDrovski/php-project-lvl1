@@ -1,6 +1,9 @@
 {
     "name": "hexlet/code",
-    "bin": ["bin/brain-game"],
+    "bin": [
+        "bin/brain-game",
+        "bin/brain-even"
+    ],
     "authors": [
         {
             "name": "sergiodrovski",
@@ -11,6 +14,9 @@
     "license": "MIT",
     "scripts": {
      "phpcs": "./vendor/bin/phpcs"
+    },
+    "autoload": {
+        "files": ["src/Games.php"]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11"
