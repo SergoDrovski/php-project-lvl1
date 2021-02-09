@@ -18,7 +18,7 @@ use function Brain\Games\Engine\startEngine;
 line('Welcome to the Brain Game!');
 $name = prompt('May I have your name?');
 line("Hello, %s!", $name);
-startEngine('even', $name);
+startEngine('calc', $name);
 
 
 
