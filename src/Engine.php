@@ -6,6 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function Brain\Games\Even\startEven;
 use function Brain\Games\Calc\startCalc;
+use function Brain\Games\Gcd\startGcd;
 
 
 function startEngine($nameGame, $name)
@@ -14,6 +15,8 @@ function startEngine($nameGame, $name)
         $rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
     } elseif ($nameGame === 'calc') {
         $rulesGame = 'What is the result of the expression?';
+    } elseif ($nameGame === 'gcd') {
+        $rulesGame = 'Find the greatest common divisor of given numbers.';
     }
 
     line("{$rulesGame}");
@@ -43,6 +46,8 @@ function startGame($nameGame)
         $res = startEven();
     } elseif ($nameGame === 'calc') {
         $res = startCalc();
+    } elseif ($nameGame === 'gcd') {
+        $res = startGcd();
     }
     return $res;
 }
