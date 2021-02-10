@@ -7,6 +7,8 @@ use function cli\prompt;
 use function Brain\Games\Even\startEven;
 use function Brain\Games\Calc\startCalc;
 use function Brain\Games\Gcd\startGcd;
+use function Brain\Games\Progression\startProgression;
+
 
 
 function startEngine($nameGame, $name)
@@ -17,6 +19,8 @@ function startEngine($nameGame, $name)
         $rulesGame = 'What is the result of the expression?';
     } elseif ($nameGame === 'gcd') {
         $rulesGame = 'Find the greatest common divisor of given numbers.';
+    } elseif ($nameGame === 'progres') {
+        $rulesGame = 'What number is missing in the progression?';
     }
 
     line("{$rulesGame}");
@@ -48,6 +52,8 @@ function startGame($nameGame)
         $res = startCalc();
     } elseif ($nameGame === 'gcd') {
         $res = startGcd();
+    } elseif ($nameGame === 'progres') {
+        $res = startProgression();
     }
     return $res;
 }
