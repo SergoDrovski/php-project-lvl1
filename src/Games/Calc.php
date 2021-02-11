@@ -5,7 +5,7 @@ namespace Brain\Games\Calc;
 use function cli\line;
 use function cli\prompt;
 
-function CalcResult(int $numFirst, int $numSecond, string $operationRand): int
+function CalcResult(int $numFirst, int $numSecond, string $operationRand): int | null
 {
     $res = null;
     if ($operationRand === '*') {

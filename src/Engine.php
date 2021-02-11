@@ -45,7 +45,7 @@ function startEngine(string $nameGame, string $name): void
     }
 }
 
-function startGame(string $nameGame): array
+function startGame(string $nameGame): array | null
 {
     $res = null;
     if ($nameGame === 'even') {
