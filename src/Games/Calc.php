@@ -5,9 +5,9 @@ namespace Brain\Games\Calc;
 use function cli\line;
 use function cli\prompt;
 
-function CalcResult(int $numFirst, int $numSecond, string $operationRand): int | null
+function CalcResult(int $numFirst, int $numSecond, string $operationRand): int
 {
-    $res = null;
+    $res = 0;
     if ($operationRand === '*') {
         $res = $numFirst * $numSecond;
     } elseif ($operationRand === '-') {
