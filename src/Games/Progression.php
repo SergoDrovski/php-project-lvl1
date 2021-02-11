@@ -26,8 +26,8 @@ function startProgression(): array
     }
     $temp = $numbers;
     $randIndex = rand(1, 8);
-    $temp[$randIndex] = '.';
-    $stringNum = implode('  ', $temp);
+    $temp[$randIndex] = '..';
+    $stringNum = implode(' ', $temp);
 
     line("Question: {$stringNum}");
     $answerUser = prompt('Your answer');

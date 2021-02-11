@@ -33,7 +33,7 @@ function startEngine($nameGame, $name)
             line('Correct!');
             $success++;
         } else {
-            line("'{$resultGame[0]}' is wrong answer ;(. Correct answer was '{$resultGame[1]}'");
+            line("'{$resultGame[0]}' is wrong answer ;(. Correct answer was '{$resultGame[1]}'.");
             line("Let's try again, %s!", $name);
             break;
         }

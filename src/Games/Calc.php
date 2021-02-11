@@ -14,8 +14,6 @@ function CalcResult(int $numFirst, int $numSecond, string $operationRand)
         $res = $numFirst - $numSecond;
     } elseif ($operationRand === '+') {
         $res = $numFirst + $numSecond;
-    } elseif ($operationRand === '/') {
-        $res = $numFirst / $numSecond;
     }
     return $res;
 }
@@ -32,11 +30,11 @@ function checkingUser($checkRes, $answerUser)
 
 function startCalc(): array
 {
-    $numFirst = rand(1, 499);
-    $numSecond = rand(1, 499);
-    $operation = ['*', '-', '+', '/'];
-    $operationRand = $operation[(rand(0, 3))];
-    $number = "{$numFirst}{$operationRand}{$numSecond}";
+    $numFirst = rand(200, 499);
+    $numSecond = rand(1, 199);
+    $operation = ['*', '-', '+'];
+    $operationRand = $operation[(rand(0, 2))];
+    $number = "{$numFirst} {$operationRand} {$numSecond}";
     line("Question: {$number}");
     $answerUser = prompt('Your answer');
     $checkRes = CalcResult($numFirst, $numSecond, $operationRand);
