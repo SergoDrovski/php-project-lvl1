@@ -9,15 +9,12 @@ use function Brain\Games\Gcd\euclideanGcd;
 function testPrime(int $a)
 {
     $res = "yes";
-    if ($a % 2 != 0) {
-        for ($i = 3; $i < 11; $i++) {
-            if (euclideanGcd($a, $i) != 1) {
-                $res = "no";
-                break;
-            }
+    $num = (int)(floor(sqrt($a)));
+    for ($i = 2; $i <= $num; $i++) {
+        if (($a % $i) == 0) {
+            $res = "no";
+            break;
         }
-    } else {
-        $res = "no";
     }
     return $res;
 }

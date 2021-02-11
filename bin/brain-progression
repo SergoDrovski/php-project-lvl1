@@ -13,7 +13,7 @@ if (file_exists($autoloadPath1)) {
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Engine\startEngine;
+use function Brain\Engine\startEngine;
   
 line('Welcome to the Brain Game!');
 $name = prompt('May I have your name?');
