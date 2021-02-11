@@ -24,7 +24,7 @@ function checkingAnswer(string $number, string $answerUser)
 }
 
 
-function startEven() : array
+function startEven(): array
 {
     $number = rand();
     line("Question: {$number}");

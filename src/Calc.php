@@ -30,7 +30,7 @@ function checkingUser($checkRes, $answerUser)
 }
 
 
-function startCalc() : array
+function startCalc(): array
 {
     $numFirst = rand(1, 499);
     $numSecond = rand(1, 499);

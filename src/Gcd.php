@@ -16,7 +16,6 @@ function euclideanGcd(int $num1, int $num2)
         $a = $temp;
     }
     return $a;
-
 }
 
 function checkingUser($checkRes, $answerUser)
@@ -29,7 +28,7 @@ function checkingUser($checkRes, $answerUser)
 }
 
 
-function startGcd() : array
+function startGcd(): array
 {
     $numFirst = rand(1, 150);
     $numSecond = rand(1, 150);
