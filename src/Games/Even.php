@@ -5,7 +5,7 @@ namespace Brain\Games\Even;
 use function cli\line;
 use function cli\prompt;
 
-function evenOrOdd(int $num)
+function evenOrOdd(int $num): string
 {
     if (($num % 2) == 0) {
         $number = "yes";
@@ -15,7 +15,7 @@ function evenOrOdd(int $num)
     return $number;
 }
 
-function checkingAnswer(string $number, string $answerUser)
+function checkingAnswer(string $number, string $answerUser): bool | string
 {
     if ($answerUser === $number) {
         return true;
