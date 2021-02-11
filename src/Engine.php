@@ -10,8 +10,9 @@ use function Brain\Games\Gcd\startGcd;
 use function Brain\Games\Progression\startProgression;
 use function Brain\Games\Prime\startPrime;
 
-function startEngine($nameGame, $name)
+function startEngine(string $nameGame, string $name): void
 {
+    $rulesGame = null;
     if ($nameGame === 'even') {
         $rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".';
     } elseif ($nameGame === 'calc') {
@@ -44,8 +45,9 @@ function startEngine($nameGame, $name)
     }
 }
 
-function startGame($nameGame)
+function startGame(string $nameGame): array
 {
+    $res = null;
     if ($nameGame === 'even') {
         $res = startEven();
     } elseif ($nameGame === 'calc') {

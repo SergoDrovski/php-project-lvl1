@@ -5,7 +5,7 @@ namespace Brain\Games\Gcd;
 use function cli\line;
 use function cli\prompt;
 
-function euclideanGcd(int $num1, int $num2)
+function euclideanGcd(int $num1, int $num2): int
 {
     $a = max($num1, $num2);
     $b = min($num1, $num2);
@@ -18,7 +18,7 @@ function euclideanGcd(int $num1, int $num2)
     return $a;
 }
 
-function checkingUser($checkRes, $answerUser)
+function checkingUser(int $checkRes, string $answerUser): bool | string
 {
     $res = $answerUser;
     if ($answerUser == $checkRes) {

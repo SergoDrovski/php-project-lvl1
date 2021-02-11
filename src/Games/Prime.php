@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function Brain\Games\Gcd\euclideanGcd;
 
-function testPrime(int $a)
+function testPrime(int $a): string
 {
     $res = "yes";
     $num = (int)(floor(sqrt($a)));
@@ -19,7 +19,7 @@ function testPrime(int $a)
     return $res;
 }
 
-function checkingUser($checkRes, $answerUser)
+function checkingUser(string $checkRes, string $answerUser): bool | string
 {
     $res = $answerUser;
     if ($answerUser == $checkRes) {
