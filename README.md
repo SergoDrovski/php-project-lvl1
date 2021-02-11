@@ -21,4 +21,4 @@ brain-progression - показываем игроку ряд чисел, обр�
 
 brain-prime - Игра "Простое ли число?" нужно ответить yes, если число простое, или no — если составное.
 
-<script id="asciicast-gCuh19nfEU3sG96ikulOmiodX" src="https://asciinema.org/a/gCuh19nfEU3sG96ikulOmiodX.js" async></script>
+<a href="https://asciinema.org/a/gCuh19nfEU3sG96ikulOmiodX" target="_blank"><img src="https://asciinema.org/a/gCuh19nfEU3sG96ikulOmiodX.svg" /></a>
