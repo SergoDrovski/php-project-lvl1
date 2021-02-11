@@ -5,7 +5,7 @@ namespace Brain\Games\Progression;
 use function cli\line;
 use function cli\prompt;
 
-function checkingUser($checkRes, $answerUser)
+function checkingUser(int $checkRes, string $answerUser): bool | string
 {
     $res = $answerUser;
     if ($answerUser == $checkRes) {
@@ -18,7 +18,8 @@ function checkingUser($checkRes, $answerUser)
 function startProgression(): array
 {
     $i = 0;
-    $numbers[$i] = rand(1, 99); //50
+    $numbers = [];
+    $numbers[$i] = rand(1, 99);
     $randStep = rand(1, 10);
     while ($i < 9) {
         $numbers[$i + 1] = $numbers[$i] + $randStep;
